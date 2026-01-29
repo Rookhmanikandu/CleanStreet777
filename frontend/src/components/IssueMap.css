@@ -1,0 +1,97 @@
+.issue-map-page {
+  padding: 20px;
+}
+
+.issue-map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.issue-map-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.back-btn {
+  background: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.refresh-btn {
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.issue-map-container {
+  width: 100%;
+  height: calc(100vh - 160px);
+  max-height: 820px;
+}
+
+.issue-map {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.no-points-hint {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.popup-content {
+  max-width: 280px;
+}
+
+.popup-title {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+}
+
+.popup-desc {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+}
+
+.popup-meta {
+  display: flex;
+  gap: 8px;
+  color: #6b7280;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.popup-image-wrap {
+  margin-bottom: 8px;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.popup-link {
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+

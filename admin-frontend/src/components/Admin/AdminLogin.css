@@ -1,0 +1,247 @@
+/* Admin Login Styles */
+.admin-login-container {
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-login-box {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.admin-login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.admin-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo-icon {
+  font-size: 3rem;
+}
+
+.admin-login-header h1 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin: 0;
+  font-weight: 700;
+}
+
+.admin-login-header h2 {
+  color: #475569;
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.admin-login-header p {
+  color: #94a3b8;
+  margin: 0;
+}
+
+.admin-login-form {
+  margin-top: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: #334155;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-options {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.forgot-password-link {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.admin-login-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-login-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.admin-login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.admin-login-footer {
+  margin-top: 2rem;
+}
+
+.divider {
+  text-align: center;
+  margin: 2rem 0 1.5rem 0;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #e2e8f0;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.divider span {
+  background: white;
+  padding: 0 1rem;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.volunteer-links {
+  text-align: center;
+}
+
+.volunteer-links p {
+  color: #64748b;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.volunteer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.volunteer-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.volunteer-link:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  color: #cbd5e1;
+}
+
+.admin-login-info {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .admin-login-container {
+    justify-content: space-between;
+  }
+
+  .admin-login-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 400px;
+  }
+
+  .info-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .info-card h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .info-card p {
+    margin: 0;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-login-container {
+    padding: 1rem;
+  }
+
+  .admin-login-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .admin-login-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .admin-login-header h2 {
+    font-size: 1.25rem;
+  }
+}
